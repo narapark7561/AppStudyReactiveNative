@@ -189,7 +189,7 @@ const Index = () => {
 }; //parent functon
 
 export default Index;
-//component이름은 대문자로!
+//component이름은 대문자로!!
 
 //custom function
 const Custom_text = () => {
