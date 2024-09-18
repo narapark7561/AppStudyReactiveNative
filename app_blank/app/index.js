@@ -170,8 +170,9 @@ import { View, Text } from "react-native";
 import React from "react";
 import Custombutton from "../components/custombutton";
 import Customimage from "../components/customimage";
-import Narabutton from "../components/narabutton";
+import Narabutton from "../components/NaraButton";
 import { ScrollView } from "react-native-web";
+import CounterApp from "../components/CounterApp";
 
 //this is our funtion
 const Index = () => {
@@ -191,6 +192,7 @@ const Index = () => {
       <Custombutton />
       <Customimage />
       <Narabutton />
+      <CounterApp />
       {/* // </View> */}
     </ScrollView>
   );
