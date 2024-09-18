@@ -16,4 +16,12 @@ export class Custombutton extends Component {
   }
 }
 
+// const Custombutton = () => {
+//   return (
+//     <View>
+//       <Button title="click" onPress={() => alert("Button pressed")} />
+//       <Button title="Submit" onPress={() => console.warn("Submit button")} />
+//     </View>
+//   );
+// };
 export default Custombutton;

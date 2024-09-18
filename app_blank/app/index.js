@@ -170,11 +170,17 @@ import { View, Text } from "react-native";
 import React from "react";
 import Custombutton from "../components/custombutton";
 import Customimage from "../components/customimage";
+import Narabutton from "../components/narabutton";
+import { ScrollView } from "react-native-web";
 
 //this is our funtion
 const Index = () => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    // <View style={{ flex: , justifyContent: "center", alignItems: "center" }}>
+    <ScrollView
+      contentContainerStyle={{ justifyContent: "center", alignItems: "center" }} // 자식 요소에 대한 정렬을 여기서 설정
+      style={{ flex: 1 }} // ScrollView 자체에 대한 스타일
+    >
       <Text style={{ fontSize: 25, backgroundColor: "yello" }}>
         This is our parent component
       </Text>
@@ -184,7 +190,9 @@ const Index = () => {
       <Empdate />
       <Custombutton />
       <Customimage />
-    </View>
+      <Narabutton />
+      {/* // </View> */}
+    </ScrollView>
   );
 }; //parent functon
 
