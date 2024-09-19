@@ -3,24 +3,26 @@ import React from "react";
 
 const Customimage = () => {
   return (
-    <View style={styles.rowContainer}>
+    <View>
       <Text>Images</Text>
       {/* local folder images */}
-      <Image
-        style={styles.image1}
-        source={require("../assets/kingpuppy.jpeg")}
-      ></Image>
-      {/* image from url */}
-      <Image
-        style={styles.image1}
-        source={{
-          uri: "https://avatar.iran.liara.run/public/96%22",
-        }}
-      ></Image>
-      <Image
-        style={styles.image1}
-        source={require("../assets/namecard.jpg")}
-      ></Image>
+      <View style={styles.rowContainer}>
+        <Image
+          style={styles.image1}
+          source={require("../assets/kingpuppy.jpeg")}
+        ></Image>
+        {/* image from url */}
+        <Image
+          style={styles.image1}
+          source={{
+            uri: "https://avatar.iran.liara.run/public/96%22",
+          }}
+        ></Image>
+        <Image
+          style={styles.image1}
+          source={require("../assets/namecard.jpg")}
+        ></Image>
+      </View>
     </View>
   );
 };
