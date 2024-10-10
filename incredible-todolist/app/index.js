@@ -1,7 +1,6 @@
-import { View, Text } from "react-native";
+import { View, Text } from "react";
 import React from "react";
-import Custompropex1 from "../components/custompropex1";
-import Multipleprops from "../components/multipleprops";
+import Statecustom1 from "../components/statecustom1";
 import Arraycustomprops from "../components/arraycustomprops";
 
 const Index = () => {
