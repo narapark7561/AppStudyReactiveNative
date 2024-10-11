@@ -1,34 +1,40 @@
 import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { Link } from "expo-router";
+import { ImageBackground } from "react-native";
 
-export default function Page() {
+const Index = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.main}>
-        <Text style={styles.title}>Hello World</Text>
-        <Text style={styles.subtitle}>This is the first page of your app.</Text>
-      </View>
+      <ImageBackground
+        source={{ uri: "https://legacy.reactjs.org/logo-og.png" }}
+      >
+        <Text style={styles.text}>Home Page</Text>
+        <Link href="/settings" style={styles.button}>
+          Go to Setting Page
+        </Link>
+      </ImageBackground>
     </View>
   );
-}
+};
+
+export default Index;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    padding: 24,
-  },
-  main: {
-    flex: 1,
     justifyContent: "center",
-    maxWidth: 960,
-    marginHorizontal: "auto",
+    alignItems: "center",
+    backgroundColor: "black",
   },
-  title: {
-    fontSize: 64,
-    fontWeight: "bold",
+  text: {
+    fontSize: 26,
+    color: "white",
   },
-  subtitle: {
-    fontSize: 36,
-    color: "#38434D",
+  button: {
+    fontSize: 26,
+    color: "white",
+    textDecorationLine: "underline",
+    textDecorationColor: "pink",
   },
 });
